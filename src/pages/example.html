@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>ADD USER</h1>
+
+    <div class="form">
+        <input type="hidden" id="id">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="password" placeholder="Password">
+        <button id="save">Submit</button>
+    </div> <br>
+
+    <hr>
+    <h1>Users</h1>
+    <div>
+        <input type="text" id="search" placeholder="Search">
+        <button id="searchBtn">Search</button>
+        <div class="filter">
+            <select id="limit">
+                <option value="1">Limit: 1</option>
+                <option value="2">Limit: 2</option>
+                <option value="5">Limit: 5</option>
+                <option value="10">Limit: 10</option>
+            </select>
+            <select id="order">
+                <option value="asc">Order By: Ascending</option>
+                <option value="desc">Order By: Descending</option>
+            </select>
+            <select id="sort">
+                <option value="id">Sort By: Id</option>
+                <option value="name">Sort By: Name</option>
+                <option value="email">Sort By: Email</option>
+            </select>
+        </div>
+    </div>
+
+    <ul id="users"></ul>
+
+    <div class="page">
+        <button id="prev">Prev</button>
+        <p>
+            Page:
+            <span id="page"></span>
+        </p>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
